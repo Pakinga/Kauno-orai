@@ -1,0 +1,120 @@
+
+.container1{
+	background-color: rgb(6, 126, 178);
+	color: rgb(250, 250, 250);
+	padding: 1rem;
+}
+header{
+	background-color: rgb(6, 126, 178);
+	color: rgb(250, 250, 250);
+}
+.container1 i{
+	color: rgb(82, 82, 82);
+}
+.form-control, .input-group-text{
+	background-color: rgb(250, 250, 250);
+	border: none;
+	border-radius: 0;
+}
+.container2 {
+	background-image: url(clouds.jpg);
+	background-size: cover;
+	padding: 1rem 1rem 0rem 1rem;
+}
+.container2 .btn{
+	background-color: rgb(48, 63, 81);
+	color: rgb(250, 250, 250);
+	border-radius: 0;
+}
+.d220{	
+  	overflow-x: scroll;
+}
+.container2 .card{
+	border-radius: 0;
+	flex-shrink: 0;
+}
+.container2 .card#bigCard{
+	border-top: 0.5rem solid rgb(240, 160, 20);
+}
+.container2 .card > *{
+	pointer-events: none;
+}
+.card-body {
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+}
+#bigCard .card-title{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+#bigCard .pi2{
+	font-size: 3rem;
+}
+.pi2{
+	font-size: 2rem;
+	color: rgb(100, 100, 100);	
+}
+#bigCard .d221 {
+	border-right: thin solid;
+	padding-right: 1rem;
+}
+#bigCard .d221 p{
+	margin-bottom: 0.1rem;
+	font-size: 1.5rem;
+}
+.d221>p:first-child{
+	font-weight: bold;
+}
+.d23 p{
+	font-size: 1.2rem;
+}
+#bigCard{
+	width: 30%;
+}
+#smallCard .card-title{
+	margin-bottom: 0.2rem;
+	font-size: 1rem;
+}
+#smallCard .d221 p{
+	margin-bottom: 0.1rem;
+}
+#smallCard{
+	border-bottom: 0.3rem solid rgb(240, 160, 20);
+}
+#withoutNote{
+	display: none;
+}
+.container3{
+	background-size: cover;
+	padding: 0rem 1rem 0rem 1rem;
+}
+.d31{
+	overflow-x: scroll;
+}
+.d33:first-child{
+	border-left: thin solid rgb(200, 200, 200);
+}
+.d33{
+	border-right: thin solid rgb(200, 200, 200);
+	padding: 0.3rem;
+	width: 4.5rem;
+	flex-shrink: 0;
+}
+.d33>p:nth-child(even){
+	margin-bottom: 0;
+	font-size: 2rem;
+}
+.d33>p:nth-child(2){
+	margin-top: 2rem;
+}
+.d33>p:nth-child(3){
+	margin-bottom: 2rem;
+}
+
+/*
+.d33#visible{
+	visibility: visible;
+}
+.d33#invisible{
+	visibility: collapse;
+}
+*/

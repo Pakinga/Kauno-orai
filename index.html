@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Weather icons CSS -->
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Other-->
+    <script src="https://kit.fontawesome.com/04b00d367c.js"></script>
+
+
+    <title>Kauno orai</title>
+</head>
+<body>
+<div class="container-fluid1">
+    <div class="container1">                   
+            <header>
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                      <h2 >Orai</h2>
+                    </div>                    
+                        <div class="col align-items-center">   
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Įveskite miestą" aria-label="City search" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                <span class="input-group-text" id="basic-addon2">
+                                    <i class="fas fa-search"></i>
+                                </span>
+                              </div>
+                            </div>
+                        </div>                    
+                </div>
+            </header>
+    </div>
+</div>
+<div class="container-fluid2">
+    <div class="container2">                   
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <h4>Kaunas</h4>
+            </div>                    
+            <div class="col align-items-center">   
+                <button type="button" class="btn ">
+                    <i class="fas fa-plus"></i> Pridėti prie Mano Vietovių
+                </button>
+             </div>                    
+        </div>
+        <!-- Nurodytos dienos trumpa orų prognozė -->
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-nowrap align-items-center pt-2 d220">
+                <div class="card align-self-end" id="bigCard"> <!-- DIDELE KORTELE -->
+                    <div class="card-body">
+                        <div class="card-title">Šiandien</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d21">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d22">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withNote">Sunny intervals and a gentle breeze</p>
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard"> <!-- MAZA KORTELE --> 
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard">
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard">
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard">
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard">
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard">
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card align-self-end" id="smallCard">
+                    <div class="card-body">
+                        <div class="card-title" id="nextDay">day</div>
+                        <div class="row align-items-center">
+                            <div class="col-auto d25">
+                                <p class="pi2"><i class="wi wi-day-snow"></i></p>
+                            </div>
+                            <div class="col-auto d26">
+                                <div class="d-flex flex-column d221">
+                                    <p class="dayT">0</p>
+                                    <p class="nightT">0</p>
+                                </div>
+                            </div>
+                            <div class="col d23">
+                                <p class="p23" id="withoutNote">note</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Nurodytos dienos oro duomenys kas valandą arba rečiau -->
+<div class="container-fluid3">
+    <div class="container3">     
+        <div class="d-flex justify-content-center">
+            <div class="d-flex flex-nowrap d31" id='dHour'>
+                
+            </div>  
+        </div>
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
