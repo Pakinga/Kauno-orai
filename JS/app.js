@@ -57,13 +57,13 @@ const showWeather = async () => {
                 iSky = 'wi wi-snow';
             } else if (wCond === 'na'){ // nenustatyta
                 return iSky = 'wi wi-na';
-            } else if (dTime >= 9 && dTime <= 16 ){  // diena nuo 9:00 iki 16:00
+            } else if (dTime >= 6 && dTime <= 21 ){  // diena nuo 9:00 iki 16:00
                 if (wCond === 'clear'){  // saulėta
                     return iSky = 'wi wi-day-sunny';
                 } else if (wCond === 'isolated-clouds' || wCond === 'scattered-clouds') {
                     return iSky = 'wi wi-day-cloudy'; // debesuota su pragiedruliais
                     } else return iSky = 'wi wi-na';
-            } else if (dTime < 9 || dTime > 16 ){ //naktis nuo 17:00 iki 8:00
+            } else if (dTime < 6 || dTime > 21 ){ //naktis nuo 17:00 iki 8:00
                 if (wCond === 'clear'){
                     return iSky = 'wi wi-night-clear'  // giedra naktis
                 } else if (wCond === 'isolated-clouds' || wCond === 'scattered-clouds') {
